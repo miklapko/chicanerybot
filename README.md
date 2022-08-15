@@ -1,5 +1,5 @@
 # chicanerybot
-Reddit bot that responds with "Yup!" and variants to comments containing "fuck" in /r/okbuddychicanery.
+Reddit bot that responds with "Yup!", "Yapp" and variants to comments containing "fuck" in /r/okbuddychicanery.
 
 Requirements:
 `Docker`
