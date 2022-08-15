@@ -1,9 +1,12 @@
 name: Push to ECR
 
 on:
- 
   push:
-    branches: [ main ]
+    paths:
+    - 'Dockerfile'
+    - '**.py'
+    - '**.ini'
+    - '**.txt'
 
 jobs:
   
