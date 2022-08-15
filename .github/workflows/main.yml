@@ -38,6 +38,11 @@ jobs:
         ECR_REPOSITORY: chicanerybot
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        echo $'[chicanerybot]\nclient_id=${{ secrets.REDDIT_CLIENT_ID }}\nclient_secret=${{ secrets.REDDIT_CLIENT_SECRET }}\npassword=${{ secrets.REDDIT_PASSWORD }}\nusername=${{ secrets.REDDIT_USERNAME }}\nuser_agent=linux:chicanerybot:v1\n' > praw.ini
+        echo '[chicanerybot]' > praw.ini
+        echo 'client_id=${{ secrets.REDDIT_CLIENT_ID }}' >> praw.ini
+        echo 'client_secret=${{ secrets.REDDIT_CLIENT_SECRET }}' >> praw.ini
+        echo 'password=${{ secrets.REDDIT_PASSWORD }}' >> praw.ini
+        echo 'username=${{ secrets.REDDIT_USERNAME }}' >> praw.ini
+        echo 'user_agent=linux:chicanerybot:v1' >> praw.ini
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
