@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 3.7-alpine
+FROM --platform=linux/amd64 python:3.7-alpine
 
 WORKDIR /usr/src/app
 
