@@ -10,4 +10,6 @@ COPY . .
 
 RUN touch replied_comments.txt
 
+RUN touch test.lol5
+
 CMD ["python", "./bot.py"]
