@@ -19,7 +19,7 @@ def run_bot():
         if comment.id not in replied_comments:
             if re.search("fuck", comment.body, re.IGNORECASE):
                 response = str(random.choice(
-                    ['Yep!', 'Yup', 'Yup! Yup!', 'Yapp']))
+                    ['Yep!', 'Yup', 'Yup! Yup!', 'Yapp', "Yep, yep"]))
                 comment.reply(response + bot_message_disclaimer)
                 replied_comments.append(comment.id)
 
