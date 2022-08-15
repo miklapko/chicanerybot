@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 COPY . .
 
-RUN touch replied_comments.txt
+RUN touch replied_comments.txt test
 
 CMD ["python", "./bot.py"]
