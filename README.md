@@ -1,3 +1,6 @@
+# RIP BOT
+# FUCK /u/spez
+
 # chicanerybot
 Reddit bot that responds with "Yup!", "Yapp" and variants to comments containing "fuck" in /r/okbuddychicanery.
 
